@@ -1,4 +1,6 @@
 bin/
 obj/
+*.exe
+*.pdb
 
-# Commit step 1 of 150
+# Commit step 2 of 150
