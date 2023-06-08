@@ -5,4 +5,10 @@ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
-# Commit step 10 of 150
+Preamble
+The GNU General Public License is a free, copyleft license for software and other kinds of works.
+
+TERMS AND CONDITIONS
+
+
+# Commit step 11 of 150
