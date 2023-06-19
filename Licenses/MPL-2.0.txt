@@ -5,5 +5,13 @@ Mozilla Public License Version 2.0
 --------------
 
 1.1. "Contributor"
+    means each individual or legal entity that creates, contributes to the
+    creation of, or owns Modifications.
 
-# Commit step 19 of 150
+1.2. "Contributor Version"
+    means the combination of the Original Software, prior Modifications used by
+    a Contributor, and the Modifications made by that particular Contributor.
+
+1.3. "Covered Software"
+
+# Commit step 20 of 150
