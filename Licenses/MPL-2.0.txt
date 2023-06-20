@@ -13,5 +13,11 @@ Mozilla Public License Version 2.0
     a Contributor, and the Modifications made by that particular Contributor.
 
 1.3. "Covered Software"
+    means the Original Software or Modifications or the combination of the
+    Original Software and Modifications, in each case including portions
+    thereof.
 
-# Commit step 20 of 150
+2. License Grants
+-----------------
+
+Subject to the terms of this License, each Contributor hereby grants You a world-wide, royalty-free, non-exclusive license to use, reproduce, make available, modify, display, perform, distribute, and otherwise exploit the Covered Software.
