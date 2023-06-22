@@ -1,5 +1,9 @@
 GNU LESSER GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 
-# Commit step 22 of 150
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+
+# Commit step 23 of 150
