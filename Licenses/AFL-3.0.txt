@@ -4,5 +4,7 @@ This Academic Free License (the "License") applies to any original work of autho
 
 Licensed under the Academic Free License version 3.0
 
-
-# Commit step 29 of 150
+1) Grant of Copyright License. Licensor grants You a worldwide, royalty-free, non-exclusive, sublicensable, non-transferable license to do the following:
+a) to reproduce the Original Work in copies;
+b) to prepare derivative works based upon the Original Work;
+c) to distribute copies of the Original Work to the public.
