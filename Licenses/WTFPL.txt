@@ -3,4 +3,8 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 
  Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
 
-# Commit step 31 of 150
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+# Commit step 32 of 150
