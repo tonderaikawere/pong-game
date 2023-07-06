@@ -7,4 +7,7 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
  copies of this license document, and changing it is allowed as long
  as the name is changed.
 
-# Commit step 32 of 150
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.
