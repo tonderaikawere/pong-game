@@ -1,4 +1,6 @@
 # Pong Championship - Retro Arcade Experience
 
+Welcome to **Pong Championship**, a high-fidelity, premium retro arcade game written in C# using the native Windows Forms framework. 
 
-<!-- Commit step 34 of 150 -->
+
+<!-- Commit step 35 of 150 -->
