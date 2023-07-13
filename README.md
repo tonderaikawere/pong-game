@@ -6,5 +6,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 
 ## Game Play Modes
 1. **Player vs AI**: Take on the computer in a single-player duel.
+2. **Player vs Player (Local)**: Challenge a friend on the same keyboard in local PvP.
+3. **AI vs AI (Watch Mode)**: Sit back and watch two computer opponents duel with perfect or standard physics tracking.
 
-<!-- Commit step 37 of 150 -->
+<!-- Commit step 38 of 150 -->
