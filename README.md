@@ -9,4 +9,6 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 2. **Player vs Player (Local)**: Challenge a friend on the same keyboard in local PvP.
 3. **AI vs AI (Watch Mode)**: Sit back and watch two computer opponents duel with perfect or standard physics tracking.
 
-<!-- Commit step 38 of 150 -->
+## Controls
+
+<!-- Commit step 39 of 150 -->
