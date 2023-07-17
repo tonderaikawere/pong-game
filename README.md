@@ -10,5 +10,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 3. **AI vs AI (Watch Mode)**: Sit back and watch two computer opponents duel with perfect or standard physics tracking.
 
 ## Controls
+- **Player 1 (Left / Blue)**: 
+  - `W` to move paddle Up
 
-<!-- Commit step 39 of 150 -->
+<!-- Commit step 40 of 150 -->
