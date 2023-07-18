@@ -12,5 +12,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 ## Controls
 - **Player 1 (Left / Blue)**: 
   - `W` to move paddle Up
+  - `S` to move paddle Down
+- **Player 2 (Right / Red)**: 
 
-<!-- Commit step 40 of 150 -->
+<!-- Commit step 41 of 150 -->
