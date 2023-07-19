@@ -14,5 +14,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
   - `W` to move paddle Up
   - `S` to move paddle Down
 - **Player 2 (Right / Red)**: 
+  - `Up Arrow` to move paddle Up
+  - `Down Arrow` to move paddle Down
 
-<!-- Commit step 41 of 150 -->
+<!-- Commit step 42 of 150 -->
