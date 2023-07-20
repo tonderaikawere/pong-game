@@ -16,5 +16,8 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 - **Player 2 (Right / Red)**: 
   - `Up Arrow` to move paddle Up
   - `Down Arrow` to move paddle Down
+- **General Menu & Navigation**:
+  - `1`, `2`, `3` to select Game Mode
+  - `E`, `M`, `H`, `I` to select AI Difficulty (Easy, Medium, Hard, Impossible)
 
-<!-- Commit step 42 of 150 -->
+<!-- Commit step 43 of 150 -->
