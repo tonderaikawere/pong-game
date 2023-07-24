@@ -21,5 +21,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
   - `E`, `M`, `H`, `I` to select AI Difficulty (Easy, Medium, Hard, Impossible)
   - `S` to toggle sound effects on/off
   - `SPACE` to start a match or restart from game over
+  - `ESC` to pause/resume an active game
 
-<!-- Commit step 44 of 150 -->
+
+<!-- Commit step 45 of 150 -->
