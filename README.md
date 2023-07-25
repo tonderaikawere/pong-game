@@ -23,5 +23,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
   - `SPACE` to start a match or restart from game over
   - `ESC` to pause/resume an active game
 
+## Technical Features
+- **Preserved Aspect Ratio Viewport**: The rendering engine scales all entities dynamically using GDI+ matrix transformations. No matter how you resize the window, the game field maintains its 4:3 aspect ratio and centers itself with clean retro pillarbox/letterbox bars.
 
-<!-- Commit step 45 of 150 -->
+<!-- Commit step 46 of 150 -->
