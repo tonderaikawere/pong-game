@@ -25,5 +25,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 
 ## Technical Features
 - **Preserved Aspect Ratio Viewport**: The rendering engine scales all entities dynamically using GDI+ matrix transformations. No matter how you resize the window, the game field maintains its 4:3 aspect ratio and centers itself with clean retro pillarbox/letterbox bars.
+- **Synthesized Audio Engine**: The application generates its own `.wav` files programmatically on startup by writing raw RIFF WAV byte streams. It doesn't depend on external audio assets.
+- **Particle Dynamics**: Impact collisions on walls or paddles trigger dynamic particle bursts that decay in alpha and scale over time.
 
-<!-- Commit step 46 of 150 -->
+<!-- Commit step 47 of 150 -->
