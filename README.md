@@ -29,5 +29,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 - **Particle Dynamics**: Impact collisions on walls or paddles trigger dynamic particle bursts that decay in alpha and scale over time.
 - **Screen Shake**: Scoring triggers a visceral viewport shake effect to emphasize points won.
 - **State Management**: Built-in state machine for Intro, Playing, Paused, and Game Over modes.
+- **Persistent High Scores**: High scores are written to and loaded from a local configuration file.
 
-<!-- Commit step 48 of 150 -->
+
+<!-- Commit step 49 of 150 -->
