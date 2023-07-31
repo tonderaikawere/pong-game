@@ -31,5 +31,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 - **State Management**: Built-in state machine for Intro, Playing, Paused, and Game Over modes.
 - **Persistent High Scores**: High scores are written to and loaded from a local configuration file.
 
+## Build Instructions
+Run the provided `build.bat` script in a Windows environment to compile all source files into a standalone executable:
 
-<!-- Commit step 49 of 150 -->
+<!-- Commit step 50 of 150 -->
