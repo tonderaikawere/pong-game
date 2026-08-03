@@ -16,5 +16,8 @@ namespace PongGame
                     string content = File.ReadAllText(FileName);
                     int score;
                     if (int.TryParse(content.Trim(), out score))
+                    {
+                        return score;
+                    }
 
-// Commit step 59 of 150
+// Commit step 60 of 150
