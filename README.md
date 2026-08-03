@@ -35,5 +35,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 Run the provided `build.bat` script in a Windows environment to compile all source files into a standalone executable:
 ```cmd
 build.bat
+```
+This runs the Microsoft C# compiler (`csc.exe`) and outputs `PongGame.exe`.
 
-<!-- Commit step 51 of 150 -->
+<!-- Commit step 52 of 150 -->
