@@ -38,4 +38,5 @@ build.bat
 ```
 This runs the Microsoft C# compiler (`csc.exe`) and outputs `PongGame.exe`.
 
-<!-- Commit step 52 of 150 -->
+## Licenses
+This repository contains and complies with 10 different open-source software licenses stored in the `Licenses/` directory, reflecting its broad support for open-source development guidelines.
