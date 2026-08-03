@@ -10,5 +10,8 @@ namespace PongGame
         public static int LoadHighScore()
         {
             try
+            {
+                if (File.Exists(FileName))
+                {
 
-// Commit step 57 of 150
+// Commit step 58 of 150
