@@ -33,5 +33,7 @@ This game was built from scratch using only core .NET APIs, and compiles directl
 
 ## Build Instructions
 Run the provided `build.bat` script in a Windows environment to compile all source files into a standalone executable:
+```cmd
+build.bat
 
-<!-- Commit step 50 of 150 -->
+<!-- Commit step 51 of 150 -->
