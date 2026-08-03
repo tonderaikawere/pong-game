@@ -13,5 +13,8 @@ namespace PongGame
             {
                 if (File.Exists(FileName))
                 {
+                    string content = File.ReadAllText(FileName);
+                    int score;
+                    if (int.TryParse(content.Trim(), out score))
 
-// Commit step 58 of 150
+// Commit step 59 of 150
