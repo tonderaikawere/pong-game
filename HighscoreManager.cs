@@ -7,5 +7,8 @@ namespace PongGame
     {
         private const string FileName = "highscores.txt";
 
+        public static int LoadHighScore()
+        {
+            try
 
-// Commit step 56 of 150
+// Commit step 57 of 150
