@@ -1,5 +1,8 @@
 using System;
 using System.IO;
 
+namespace PongGame
+{
+    public static class HighscoreManager
 
-// Commit step 54 of 150
+// Commit step 55 of 150
