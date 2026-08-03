@@ -19,5 +19,9 @@ namespace PongGame
                     {
                         return score;
                     }
+                }
+            }
+            catch
+            {
 
-// Commit step 60 of 150
+// Commit step 61 of 150
