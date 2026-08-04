@@ -41,5 +41,7 @@ namespace PongGame
             catch
             {
                 // Ignore save errors
-
-// Commit step 67 of 150
+            }
+        }
+    }
+}
