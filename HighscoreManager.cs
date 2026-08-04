@@ -35,5 +35,8 @@ namespace PongGame
                 int currentHighScore = LoadHighScore();
                 if (newScore > currentHighScore)
                 {
+                    File.WriteAllText(FileName, newScore.ToString());
+                }
+            }
 
-// Commit step 65 of 150
+// Commit step 66 of 150
