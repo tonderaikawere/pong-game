@@ -29,5 +29,8 @@ namespace PongGame
         }
 
         public static void SaveHighScore(int newScore)
+        {
+            try
+            {
 
-// Commit step 63 of 150
+// Commit step 64 of 150
