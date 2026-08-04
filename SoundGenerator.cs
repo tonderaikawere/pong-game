@@ -23,5 +23,13 @@ namespace PongGame
                 wr.Write(16); // Subchunk1Size
                 wr.Write((short)1); // AudioFormat (PCM)
                 wr.Write(channels);
+                wr.Write(sampleRate);
+                wr.Write(sampleRate * channels * (bitsPerSample / 8)); // ByteRate
+                wr.Write((short)(channels * (bitsPerSample / 8))); // BlockAlign
+                wr.Write(bitsPerSample);
+                wr.Write(new char[] { 'd', 'a', 't', 'a' });
+                wr.Write(dataLength);
 
-// Commit step 71 of 150
+                for (int i = 0; i < numSamples; i++)
+
+// Commit step 72 of 150
