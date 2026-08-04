@@ -26,5 +26,8 @@ namespace PongGame
                 // Ignore load errors and default to 0
             }
             return 0;
+        }
 
-// Commit step 62 of 150
+        public static void SaveHighScore(int newScore)
+
+// Commit step 63 of 150
