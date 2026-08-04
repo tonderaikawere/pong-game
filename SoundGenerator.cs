@@ -14,5 +14,14 @@ namespace PongGame
             int dataLength = numSamples * channels * (bitsPerSample / 8);
             
             using (FileStream fs = new FileStream(filePath, FileMode.Create))
+            using (BinaryWriter wr = new BinaryWriter(fs))
+            {
+                wr.Write(new char[] { 'R', 'I', 'F', 'F' });
+                wr.Write(36 + dataLength);
+                wr.Write(new char[] { 'W', 'A', 'V', 'E' });
+                wr.Write(new char[] { 'f', 'm', 't', ' ' });
+                wr.Write(16); // Subchunk1Size
+                wr.Write((short)1); // AudioFormat (PCM)
+                wr.Write(channels);
 
-// Commit step 70 of 150
+// Commit step 71 of 150
