@@ -32,5 +32,8 @@ namespace PongGame
         {
             try
             {
+                int currentHighScore = LoadHighScore();
+                if (newScore > currentHighScore)
+                {
 
-// Commit step 64 of 150
+// Commit step 65 of 150
