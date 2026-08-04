@@ -23,5 +23,8 @@ namespace PongGame
             }
             catch
             {
+                // Ignore load errors and default to 0
+            }
+            return 0;
 
-// Commit step 61 of 150
+// Commit step 62 of 150
