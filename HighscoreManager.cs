@@ -38,5 +38,8 @@ namespace PongGame
                     File.WriteAllText(FileName, newScore.ToString());
                 }
             }
+            catch
+            {
+                // Ignore save errors
 
-// Commit step 66 of 150
+// Commit step 67 of 150
