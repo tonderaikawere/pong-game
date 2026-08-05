@@ -48,5 +48,14 @@ namespace PongGame
             double dur1 = 0.15;
             double dur2 = 0.25;
             int numSamples1 = (int)(sampleRate * dur1);
+            int numSamples2 = (int)(sampleRate * dur2);
+            int totalSamples = numSamples1 + numSamples2;
+            int dataLength = totalSamples * channels * (bitsPerSample / 8);
 
-// Commit step 74 of 150
+            using (FileStream fs = new FileStream(filePath, FileMode.Create))
+            using (BinaryWriter wr = new BinaryWriter(fs))
+            {
+                wr.Write(new char[] { 'R', 'I', 'F', 'F' });
+                wr.Write(36 + dataLength);
+
+// Commit step 75 of 150
