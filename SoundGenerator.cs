@@ -99,5 +99,14 @@ namespace PongGame
             using (BinaryWriter wr = new BinaryWriter(fs))
             {
                 wr.Write(new char[] { 'R', 'I', 'F', 'F' });
+                wr.Write(36 + dataLength);
+                wr.Write(new char[] { 'W', 'A', 'V', 'E' });
+                wr.Write(new char[] { 'f', 'm', 't', ' ' });
+                wr.Write(16);
+                wr.Write((short)1);
+                wr.Write(channels);
+                wr.Write(sampleRate);
+                wr.Write(sampleRate * channels * (bitsPerSample / 8));
+                wr.Write((short)(channels * (bitsPerSample / 8)));
 
-// Commit step 80 of 150
+// Commit step 81 of 150
