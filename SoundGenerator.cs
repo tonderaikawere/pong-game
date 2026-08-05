@@ -116,5 +116,12 @@ namespace PongGame
                 for (int i = 0; i < numSamples; i++)
                 {
                     double progress = (double)i / numSamples;
-
-// Commit step 82 of 150
+                    double currentFreq = 400.0 * (1.0 - progress) + 100.0;
+                    phase += 2.0 * Math.PI * currentFreq / sampleRate;
+                    short sample = (short)(Math.Sin(phase) * 16000);
+                    wr.Write(sample);
+                }
+            }
+        }
+    }
+}
