@@ -40,5 +40,13 @@ namespace PongGame
             }
         }
 
+        public static void GenerateScoreBeep(string filePath)
+        {
+            int sampleRate = 22050;
+            short bitsPerSample = 16;
+            short channels = 1;
+            double dur1 = 0.15;
+            double dur2 = 0.25;
+            int numSamples1 = (int)(sampleRate * dur1);
 
-// Commit step 73 of 150
+// Commit step 74 of 150
