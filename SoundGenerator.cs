@@ -108,5 +108,13 @@ namespace PongGame
                 wr.Write(sampleRate);
                 wr.Write(sampleRate * channels * (bitsPerSample / 8));
                 wr.Write((short)(channels * (bitsPerSample / 8)));
+                wr.Write(bitsPerSample);
+                wr.Write(new char[] { 'd', 'a', 't', 'a' });
+                wr.Write(dataLength);
 
-// Commit step 81 of 150
+                double phase = 0;
+                for (int i = 0; i < numSamples; i++)
+                {
+                    double progress = (double)i / numSamples;
+
+// Commit step 82 of 150
