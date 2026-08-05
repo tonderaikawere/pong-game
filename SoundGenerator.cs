@@ -91,5 +91,13 @@ namespace PongGame
             int sampleRate = 22050;
             short bitsPerSample = 16;
             short channels = 1;
+            double duration = 0.8;
+            int numSamples = (int)(sampleRate * duration);
+            int dataLength = numSamples * channels * (bitsPerSample / 8);
 
-// Commit step 79 of 150
+            using (FileStream fs = new FileStream(filePath, FileMode.Create))
+            using (BinaryWriter wr = new BinaryWriter(fs))
+            {
+                wr.Write(new char[] { 'R', 'I', 'F', 'F' });
+
+// Commit step 80 of 150
