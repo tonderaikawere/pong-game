@@ -82,5 +82,14 @@ namespace PongGame
                     double angle = 2.0 * Math.PI * 659.25 * t; // E5
                     short sample = (short)(Math.Sin(angle) * 16000);
                     wr.Write(sample);
+                }
+            }
+        }
 
-// Commit step 78 of 150
+        public static void GenerateGameOverBeep(string filePath)
+        {
+            int sampleRate = 22050;
+            short bitsPerSample = 16;
+            short channels = 1;
+
+// Commit step 79 of 150
