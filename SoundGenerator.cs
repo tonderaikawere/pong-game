@@ -31,5 +31,14 @@ namespace PongGame
                 wr.Write(dataLength);
 
                 for (int i = 0; i < numSamples; i++)
+                {
+                    double t = (double)i / sampleRate;
+                    double angle = 2.0 * Math.PI * frequency * t;
+                    short sample = (short)(Math.Sin(angle) * 16000);
+                    wr.Write(sample);
+                }
+            }
+        }
 
-// Commit step 72 of 150
+
+// Commit step 73 of 150
