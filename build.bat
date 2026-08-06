@@ -4,5 +4,5 @@ if %errorlevel% neq 0 (
     echo Compilation Failed!
     pause
     exit /b %errorlevel%
-
-:: Commit step 91 of 150
+)
+echo Compilation Succeeded!
