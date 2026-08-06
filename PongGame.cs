@@ -9,5 +9,17 @@ namespace PongGame
     public class PongForm : Form
     {
         public enum GameState
+        {
+            Intro,
+            Playing,
+            Paused,
+            GameOver
+        }
 
-// Commit step 93 of 150
+        public enum PlayMode
+        {
+            PlayerVsAI,
+            PlayerVsPlayer,
+            AIVsAI
+
+// Commit step 94 of 150
