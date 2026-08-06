@@ -10,5 +10,7 @@ namespace PongGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-// Commit step 87 of 150
+            Application.Run(new PongForm());
+        }
+    }
+}
