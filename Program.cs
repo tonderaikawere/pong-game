@@ -7,5 +7,8 @@ namespace PongGame
     {
         [STAThread]
         static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
 
-// Commit step 86 of 150
+// Commit step 87 of 150
