@@ -33,5 +33,17 @@ namespace PongGame
 
         private struct Particle
         {
+            public float X;
+            public float Y;
+            public float Vx;
+            public float Vy;
+            public float Size;
+            public int Life;
+            public Color Color;
+        }
 
-// Commit step 95 of 150
+        private const float LogicalWidth = 800f;
+        private const float LogicalHeight = 600f;
+        private const float PaddleWidth = 15f;
+
+// Commit step 96 of 150
