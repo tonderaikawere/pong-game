@@ -142,4 +142,16 @@ namespace PongGame
             catch { }
         }
 
-// Commit step 104 of 150
+        private void PlaySound(System.Media.SoundPlayer player)
+        {
+            if (soundEnabled && player != null)
+            {
+                try
+                {
+                    player.Play();
+                }
+                catch { }
+            }
+        }
+
+// Commit step 105 of 150
