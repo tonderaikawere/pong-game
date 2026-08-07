@@ -82,4 +82,16 @@ namespace PongGame
         private bool upPressed = false;
         private bool downPressed = false;
 
-// Commit step 99 of 150
+        private List<Particle> particles = new List<Particle>();
+        private Random random = new Random();
+        private int shakeDuration = 0;
+        private float shakeIntensity = 0f;
+
+        private Timer gameTimer;
+
+        public PongForm()
+        {
+            this.Text = "PONG CHAMPIONSHIP - ARCADE CLASSIC";
+            this.ClientSize = new Size(800, 600);
+
+// Commit step 100 of 150
