@@ -58,4 +58,16 @@ namespace PongGame
         private const string WavScore = "score.wav";
         private const string WavGameOver = "game_over.wav";
 
-// Commit step 97 of 150
+        private PlayMode playMode = PlayMode.PlayerVsAI;
+        private Difficulty difficulty = Difficulty.Medium;
+        private bool soundEnabled = true;
+        private int highScore = 0;
+
+        private GameState state = GameState.Intro;
+        private int player1Score = 0;
+        private int player2Score = 0;
+        private const int WinningScore = 10;
+
+        private float paddle1Y = 255f;
+
+// Commit step 98 of 150
