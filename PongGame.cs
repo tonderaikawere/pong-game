@@ -21,5 +21,17 @@ namespace PongGame
             PlayerVsAI,
             PlayerVsPlayer,
             AIVsAI
+        }
 
-// Commit step 94 of 150
+        public enum Difficulty
+        {
+            Easy,
+            Medium,
+            Hard,
+            Impossible
+        }
+
+        private struct Particle
+        {
+
+// Commit step 95 of 150
