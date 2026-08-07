@@ -129,5 +129,17 @@ namespace PongGame
         {
             try
             {
+                soundHitPaddle = new System.Media.SoundPlayer(WavHitPaddle);
+                soundHitWall = new System.Media.SoundPlayer(WavHitWall);
+                soundScore = new System.Media.SoundPlayer(WavScore);
+                soundGameOver = new System.Media.SoundPlayer(WavGameOver);
 
-// Commit step 103 of 150
+                soundHitPaddle.Load();
+                soundHitWall.Load();
+                soundScore.Load();
+                soundGameOver.Load();
+            }
+            catch { }
+        }
+
+// Commit step 104 of 150
