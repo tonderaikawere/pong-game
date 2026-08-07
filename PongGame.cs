@@ -105,5 +105,17 @@ namespace PongGame
 
             gameTimer = new Timer();
             gameTimer.Interval = 16;
+            gameTimer.Tick += GameTimer_Tick;
+            gameTimer.Start();
+        }
 
-// Commit step 101 of 150
+        private void InitSoundFiles()
+        {
+            try
+            {
+                if (!File.Exists(WavHitPaddle))
+                    SoundGenerator.GenerateBeep(WavHitPaddle, 440.0, 0.1);
+                if (!File.Exists(WavHitWall))
+                    SoundGenerator.GenerateBeep(WavHitWall, 220.0, 0.08);
+
+// Commit step 102 of 150
