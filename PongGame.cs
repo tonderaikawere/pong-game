@@ -117,5 +117,17 @@ namespace PongGame
                     SoundGenerator.GenerateBeep(WavHitPaddle, 440.0, 0.1);
                 if (!File.Exists(WavHitWall))
                     SoundGenerator.GenerateBeep(WavHitWall, 220.0, 0.08);
+                if (!File.Exists(WavScore))
+                    SoundGenerator.GenerateScoreBeep(WavScore);
+                if (!File.Exists(WavGameOver))
+                    SoundGenerator.GenerateGameOverBeep(WavGameOver);
+            }
+            catch { }
+        }
 
-// Commit step 102 of 150
+        private void LoadSoundPlayers()
+        {
+            try
+            {
+
+// Commit step 103 of 150
