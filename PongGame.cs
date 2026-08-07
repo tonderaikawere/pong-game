@@ -69,5 +69,17 @@ namespace PongGame
         private const int WinningScore = 10;
 
         private float paddle1Y = 255f;
+        private float paddle2Y = 255f;
+        private float ballX = 394f;
+        private float ballY = 294f;
+        private float ballSpeedX = 6f;
+        private float ballSpeedY = 4f;
+        private const float BaseBallSpeedX = 6f;
+        private float playerPaddleSpeed = 8f;
 
-// Commit step 98 of 150
+        private bool wPressed = false;
+        private bool sPressed = false;
+        private bool upPressed = false;
+        private bool downPressed = false;
+
+// Commit step 99 of 150
