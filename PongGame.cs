@@ -93,5 +93,17 @@ namespace PongGame
         {
             this.Text = "PONG CHAMPIONSHIP - ARCADE CLASSIC";
             this.ClientSize = new Size(800, 600);
+            this.MinimumSize = new Size(400, 300);
+            this.DoubleBuffered = true;
+            this.BackColor = Color.Black;
+            this.StartPosition = FormStartPosition.CenterScreen;
 
-// Commit step 100 of 150
+            InitSoundFiles();
+            LoadSoundPlayers();
+
+            highScore = HighscoreManager.LoadHighScore();
+
+            gameTimer = new Timer();
+            gameTimer.Interval = 16;
+
+// Commit step 101 of 150
