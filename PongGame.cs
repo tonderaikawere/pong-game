@@ -200,5 +200,17 @@ namespace PongGame
                 p.Y = y;
                 p.Vx = (float)(random.NextDouble() * 6.0 - 3.0) + (ballSpeedX > 0 ? -2f : 2f);
                 p.Vy = (float)(random.NextDouble() * 6.0 - 3.0);
+                p.Size = (float)(random.NextDouble() * 5.0 + 3.0);
+                p.Life = 255;
+                p.Color = col;
+                particles.Add(p);
+            }
+        }
 
-// Commit step 109 of 150
+        private void SpawnScoreParticles(float x, float y, Color col)
+        {
+            for (int i = 0; i < 30; i++)
+            {
+                Particle p;
+
+// Commit step 110 of 150
