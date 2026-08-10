@@ -154,4 +154,16 @@ namespace PongGame
             }
         }
 
-// Commit step 105 of 150
+        private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            if (state == GameState.Playing)
+            {
+                UpdatePhysics();
+            }
+            else
+            {
+                UpdateParticlesOnly();
+            }
+            this.Invalidate();
+
+// Commit step 106 of 150
