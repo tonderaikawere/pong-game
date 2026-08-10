@@ -272,5 +272,17 @@ namespace PongGame
                 ballY = LogicalHeight - BallSize;
                 ballSpeedY = -ballSpeedY;
                 PlaySound(soundHitWall);
+                SpawnPaddleHitParticles(ballX, ballY, Color.White);
+            }
 
-// Commit step 115 of 150
+            if (ballSpeedX < 0 && ballX <= 40f + PaddleWidth && ballX >= 40f - BallSize)
+            {
+                if (ballY + BallSize >= paddle1Y && ballY <= paddle1Y + PaddleHeight)
+                {
+                    ballX = 40f + PaddleWidth;
+                    ballSpeedX = -ballSpeedX;
+                    ballSpeedX *= 1.05f;
+                    float relativeIntersectY = (paddle1Y + (PaddleHeight / 2f)) - (ballY + (BallSize / 2f));
+                    float normalizedIntersectY = relativeIntersectY / (PaddleHeight / 2f);
+
+// Commit step 116 of 150
