@@ -165,5 +165,16 @@ namespace PongGame
                 UpdateParticlesOnly();
             }
             this.Invalidate();
+        }
 
-// Commit step 106 of 150
+        private void ResetBall(bool toPlayer1)
+        {
+            ballX = LogicalWidth / 2f - BallSize / 2f;
+            ballY = LogicalHeight / 2f - BallSize / 2f;
+            ballSpeedX = toPlayer1 ? -BaseBallSpeedX : BaseBallSpeedX;
+            ballSpeedY = (float)(random.NextDouble() * 6.0 - 3.0);
+        }
+
+        private void ResetGame()
+
+// Commit step 107 of 150
