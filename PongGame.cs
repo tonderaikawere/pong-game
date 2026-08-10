@@ -176,5 +176,17 @@ namespace PongGame
         }
 
         private void ResetGame()
+        {
+            player1Score = 0;
+            player2Score = 0;
+            paddle1Y = (LogicalHeight - PaddleHeight) / 2f;
+            paddle2Y = (LogicalHeight - PaddleHeight) / 2f;
+            ResetBall(random.Next(2) == 0);
+            particles.Clear();
+        }
 
-// Commit step 107 of 150
+        private void TriggerScreenShake(int duration, float intensity)
+        {
+            shakeDuration = duration;
+
+// Commit step 108 of 150
