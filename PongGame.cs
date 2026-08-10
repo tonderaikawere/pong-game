@@ -188,5 +188,17 @@ namespace PongGame
         private void TriggerScreenShake(int duration, float intensity)
         {
             shakeDuration = duration;
+            shakeIntensity = intensity;
+        }
 
-// Commit step 108 of 150
+        private void SpawnPaddleHitParticles(float x, float y, Color col)
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                Particle p;
+                p.X = x;
+                p.Y = y;
+                p.Vx = (float)(random.NextDouble() * 6.0 - 3.0) + (ballSpeedX > 0 ? -2f : 2f);
+                p.Vy = (float)(random.NextDouble() * 6.0 - 3.0);
+
+// Commit step 109 of 150
