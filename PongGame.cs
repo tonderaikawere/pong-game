@@ -212,5 +212,17 @@ namespace PongGame
             for (int i = 0; i < 30; i++)
             {
                 Particle p;
+                p.X = x;
+                p.Y = y;
+                p.Vx = (float)(random.NextDouble() * 10.0 - 5.0);
+                p.Vy = (float)(random.NextDouble() * 10.0 - 5.0);
+                p.Size = (float)(random.NextDouble() * 6.0 + 4.0);
+                p.Life = 255;
+                p.Color = col;
+                particles.Add(p);
+            }
+        }
 
-// Commit step 110 of 150
+        private void UpdatePhysics()
+
+// Commit step 111 of 150
