@@ -260,5 +260,17 @@ namespace PongGame
             ballX += ballSpeedX;
             ballY += ballSpeedY;
 
+            if (ballY <= 0)
+            {
+                ballY = 0;
+                ballSpeedY = -ballSpeedY;
+                PlaySound(soundHitWall);
+                SpawnPaddleHitParticles(ballX, ballY, Color.White);
+            }
+            else if (ballY >= LogicalHeight - BallSize)
+            {
+                ballY = LogicalHeight - BallSize;
+                ballSpeedY = -ballSpeedY;
+                PlaySound(soundHitWall);
 
-// Commit step 114 of 150
+// Commit step 115 of 150
