@@ -248,5 +248,17 @@ namespace PongGame
                     paddle2Y -= playerPaddleSpeed;
                 }
                 if (downPressed && paddle2Y < LogicalHeight - PaddleHeight)
+                {
+                    paddle2Y += playerPaddleSpeed;
+                }
+            }
+            else
+            {
+                RunAIMovement(ref paddle2Y, ballX, ballY, difficulty);
+            }
 
-// Commit step 113 of 150
+            ballX += ballSpeedX;
+            ballY += ballSpeedY;
+
+
+// Commit step 114 of 150
