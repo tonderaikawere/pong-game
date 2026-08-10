@@ -236,5 +236,17 @@ namespace PongGame
                     paddle1Y += playerPaddleSpeed;
                 }
             }
+            else
+            {
+                RunAIMovement(ref paddle1Y, ballX, ballY, difficulty);
+            }
 
-// Commit step 112 of 150
+            if (playMode == PlayMode.PlayerVsPlayer)
+            {
+                if (upPressed && paddle2Y > 0)
+                {
+                    paddle2Y -= playerPaddleSpeed;
+                }
+                if (downPressed && paddle2Y < LogicalHeight - PaddleHeight)
+
+// Commit step 113 of 150
