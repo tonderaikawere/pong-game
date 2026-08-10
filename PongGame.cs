@@ -224,5 +224,17 @@ namespace PongGame
         }
 
         private void UpdatePhysics()
+        {
+            if (playMode != PlayMode.AIVsAI)
+            {
+                if (wPressed && paddle1Y > 0)
+                {
+                    paddle1Y -= playerPaddleSpeed;
+                }
+                if (sPressed && paddle1Y < LogicalHeight - PaddleHeight)
+                {
+                    paddle1Y += playerPaddleSpeed;
+                }
+            }
 
-// Commit step 111 of 150
+// Commit step 112 of 150
