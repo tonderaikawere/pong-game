@@ -391,5 +391,17 @@ namespace PongGame
                 Particle p;
                 p.X = x;
                 p.Y = y;
+                p.Vx = (float)(random.NextDouble() * 2.0 - 1.0);
+                p.Vy = (float)(random.NextDouble() * 2.0 - 1.0);
+                p.Size = (float)(random.NextDouble() * 3.0 + 1.0);
+                p.Life = 180;
+                p.Color = col;
+                particles.Add(p);
+            }
+        }
 
-// Commit step 125 of 150
+        private void RunAIMovement(ref float paddleY, float targetX, float targetY, Difficulty diff)
+        {
+            float centerPaddle = paddleY + PaddleHeight / 2f;
+
+// Commit step 126 of 150
