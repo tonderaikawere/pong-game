@@ -355,5 +355,17 @@ namespace PongGame
                 p.Size *= 0.95f;
                 if (p.Life <= 0 || p.Size < 0.5f)
                 {
+                    particles.RemoveAt(i);
+                }
+                else
+                {
+                    particles[i] = p;
+                }
+            }
+        }
 
-// Commit step 122 of 150
+        private void UpdateParticlesOnly()
+        {
+            for (int i = particles.Count - 1; i >= 0; i--)
+
+// Commit step 123 of 150
