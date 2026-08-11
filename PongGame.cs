@@ -379,5 +379,17 @@ namespace PongGame
                 }
                 else
                 {
+                    particles[i] = p;
+                }
+            }
 
-// Commit step 124 of 150
+            if (state == GameState.Intro && random.Next(100) < 5)
+            {
+                float x = (float)(random.NextDouble() * LogicalWidth);
+                float y = (float)(random.NextDouble() * LogicalHeight);
+                Color col = random.Next(2) == 0 ? Color.FromArgb(0, 102, 255) : Color.FromArgb(255, 51, 51);
+                Particle p;
+                p.X = x;
+                p.Y = y;
+
+// Commit step 125 of 150
