@@ -344,5 +344,16 @@ namespace PongGame
                 {
                     ResetBall(true);
                 }
+            }
 
-// Commit step 121 of 150
+            for (int i = particles.Count - 1; i >= 0; i--)
+            {
+                Particle p = particles[i];
+                p.X += p.Vx;
+                p.Y += p.Vy;
+                p.Life -= 8;
+                p.Size *= 0.95f;
+                if (p.Life <= 0 || p.Size < 0.5f)
+                {
+
+// Commit step 122 of 150
