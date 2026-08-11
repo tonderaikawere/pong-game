@@ -333,4 +333,16 @@ namespace PongGame
                 TriggerScreenShake(12, 10f);
                 SpawnScoreParticles(LogicalWidth - 20, ballY, Color.FromArgb(0, 102, 255));
 
-// Commit step 120 of 150
+                if (player1Score >= WinningScore)
+                {
+                    state = GameState.GameOver;
+                    PlaySound(soundGameOver);
+                    HighscoreManager.SaveHighScore(Math.Max(player1Score, player2Score));
+                    highScore = HighscoreManager.LoadHighScore();
+                }
+                else
+                {
+                    ResetBall(true);
+                }
+
+// Commit step 121 of 150
