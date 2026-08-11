@@ -308,5 +308,17 @@ namespace PongGame
             }
 
             if (ballX < 0)
+            {
+                player2Score++;
+                PlaySound(soundScore);
+                TriggerScreenShake(12, 10f);
+                SpawnScoreParticles(20, ballY, Color.FromArgb(255, 51, 51));
 
-// Commit step 118 of 150
+                if (player2Score >= WinningScore)
+                {
+                    state = GameState.GameOver;
+                    PlaySound(soundGameOver);
+                    HighscoreManager.SaveHighScore(Math.Max(player1Score, player2Score));
+                    highScore = HighscoreManager.LoadHighScore();
+
+// Commit step 119 of 150
