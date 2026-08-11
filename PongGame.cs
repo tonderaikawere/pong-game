@@ -320,5 +320,17 @@ namespace PongGame
                     PlaySound(soundGameOver);
                     HighscoreManager.SaveHighScore(Math.Max(player1Score, player2Score));
                     highScore = HighscoreManager.LoadHighScore();
+                }
+                else
+                {
+                    ResetBall(false);
+                }
+            }
+            else if (ballX > LogicalWidth)
+            {
+                player1Score++;
+                PlaySound(soundScore);
+                TriggerScreenShake(12, 10f);
+                SpawnScoreParticles(LogicalWidth - 20, ballY, Color.FromArgb(0, 102, 255));
 
-// Commit step 119 of 150
+// Commit step 120 of 150
