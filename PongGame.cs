@@ -367,5 +367,17 @@ namespace PongGame
         private void UpdateParticlesOnly()
         {
             for (int i = particles.Count - 1; i >= 0; i--)
+            {
+                Particle p = particles[i];
+                p.X += p.Vx;
+                p.Y += p.Vy;
+                p.Life -= 6;
+                p.Size *= 0.96f;
+                if (p.Life <= 0 || p.Size < 0.5f)
+                {
+                    particles.RemoveAt(i);
+                }
+                else
+                {
 
-// Commit step 123 of 150
+// Commit step 124 of 150
