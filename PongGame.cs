@@ -403,5 +403,17 @@ namespace PongGame
         private void RunAIMovement(ref float paddleY, float targetX, float targetY, Difficulty diff)
         {
             float centerPaddle = paddleY + PaddleHeight / 2f;
+            float diffY = targetY - centerPaddle;
+            float aiSpeed = 0f;
 
-// Commit step 126 of 150
+            switch (diff)
+            {
+                case Difficulty.Easy:
+                    aiSpeed = 3.2f;
+                    if (Math.Abs(diffY) > 25)
+                    {
+                        if (diffY > 0) paddleY += aiSpeed;
+                        else paddleY -= aiSpeed;
+                    }
+
+// Commit step 127 of 150
