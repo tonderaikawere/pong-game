@@ -487,5 +487,17 @@ namespace PongGame
                 {
                     state = GameState.Intro;
                 }
+            }
+        }
 
-// Commit step 133 of 150
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.W) wPressed = false;
+            if (e.KeyCode == Keys.S) sPressed = false;
+            if (e.KeyCode == Keys.Up) upPressed = false;
+            if (e.KeyCode == Keys.Down) downPressed = false;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+
+// Commit step 134 of 150
