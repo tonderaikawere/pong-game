@@ -475,5 +475,17 @@ namespace PongGame
 
                 if (e.KeyCode == Keys.S) soundEnabled = !soundEnabled;
 
+                if (e.KeyCode == Keys.Space)
+                {
+                    ResetGame();
+                    state = GameState.Playing;
+                }
+            }
+            else if (state == GameState.GameOver)
+            {
+                if (e.KeyCode == Keys.Space)
+                {
+                    state = GameState.Intro;
+                }
 
-// Commit step 132 of 150
+// Commit step 133 of 150
