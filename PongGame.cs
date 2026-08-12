@@ -427,5 +427,17 @@ namespace PongGame
                 case Difficulty.Hard:
                     aiSpeed = 7.0f;
                     if (Math.Abs(diffY) > 5)
+                    {
+                        if (diffY > 0) paddleY += aiSpeed;
+                        else paddleY -= aiSpeed;
+                    }
+                    break;
+                case Difficulty.Impossible:
+                    paddleY = targetY - PaddleHeight / 2f;
+                    break;
+            }
 
-// Commit step 128 of 150
+            if (paddleY < 0) paddleY = 0;
+            if (paddleY > LogicalHeight - PaddleHeight) paddleY = LogicalHeight - PaddleHeight;
+
+// Commit step 129 of 150
