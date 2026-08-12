@@ -511,5 +511,16 @@ namespace PongGame
             {
                 viewportHeight = this.ClientSize.Height;
                 viewportWidth = viewportHeight * targetAspect;
+                viewportX = (this.ClientSize.Width - viewportWidth) / 2f;
+                viewportY = 0;
+            }
+            else
+            {
+                viewportWidth = this.ClientSize.Width;
+                viewportHeight = viewportWidth / targetAspect;
+                viewportX = 0;
+                viewportY = (this.ClientSize.Height - viewportHeight) / 2f;
+            }
 
-// Commit step 135 of 150
+
+// Commit step 136 of 150
