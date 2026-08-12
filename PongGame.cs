@@ -451,5 +451,17 @@ namespace PongGame
                 if (e.KeyCode == Keys.Down) downPressed = true;
 
                 if (e.KeyCode == Keys.Escape)
+                {
+                    state = GameState.Paused;
+                }
+            }
+            else if (state == GameState.Paused)
+            {
+                if (e.KeyCode == Keys.Escape)
+                {
+                    state = GameState.Playing;
+                }
+            }
+            else if (state == GameState.Intro)
 
-// Commit step 130 of 150
+// Commit step 131 of 150
