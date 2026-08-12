@@ -499,5 +499,17 @@ namespace PongGame
         }
 
         protected override void OnPaint(PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-// Commit step 134 of 150
+            float targetAspect = LogicalWidth / LogicalHeight;
+            float currentAspect = (float)this.ClientSize.Width / this.ClientSize.Height;
+            float viewportWidth, viewportHeight, viewportX, viewportY;
+
+            if (currentAspect > targetAspect)
+            {
+                viewportHeight = this.ClientSize.Height;
+                viewportWidth = viewportHeight * targetAspect;
+
+// Commit step 135 of 150
