@@ -522,5 +522,17 @@ namespace PongGame
                 viewportY = (this.ClientSize.Height - viewportHeight) / 2f;
             }
 
+            g.Clear(Color.FromArgb(10, 10, 10));
 
-// Commit step 136 of 150
+            System.Drawing.Drawing2D.GraphicsState baseState = g.Save();
+
+            if (state == GameState.Playing && shakeDuration > 0)
+            {
+                float dx = (float)(random.NextDouble() * 2.0 - 1.0) * shakeIntensity;
+                float dy = (float)(random.NextDouble() * 2.0 - 1.0) * shakeIntensity;
+                g.TranslateTransform(dx, dy);
+                shakeDuration--;
+            }
+
+
+// Commit step 137 of 150
