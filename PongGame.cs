@@ -415,5 +415,17 @@ namespace PongGame
                         if (diffY > 0) paddleY += aiSpeed;
                         else paddleY -= aiSpeed;
                     }
+                    break;
+                case Difficulty.Medium:
+                    aiSpeed = 4.8f;
+                    if (Math.Abs(diffY) > 15)
+                    {
+                        if (diffY > 0) paddleY += aiSpeed;
+                        else paddleY -= aiSpeed;
+                    }
+                    break;
+                case Difficulty.Hard:
+                    aiSpeed = 7.0f;
+                    if (Math.Abs(diffY) > 5)
 
-// Commit step 127 of 150
+// Commit step 128 of 150
