@@ -463,5 +463,17 @@ namespace PongGame
                 }
             }
             else if (state == GameState.Intro)
+            {
+                if (e.KeyCode == Keys.D1 || e.KeyCode == Keys.NumPad1) playMode = PlayMode.PlayerVsAI;
+                if (e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad2) playMode = PlayMode.PlayerVsPlayer;
+                if (e.KeyCode == Keys.D3 || e.KeyCode == Keys.NumPad3) playMode = PlayMode.AIVsAI;
 
-// Commit step 131 of 150
+                if (e.KeyCode == Keys.E) difficulty = Difficulty.Easy;
+                if (e.KeyCode == Keys.M) difficulty = Difficulty.Medium;
+                if (e.KeyCode == Keys.H) difficulty = Difficulty.Hard;
+                if (e.KeyCode == Keys.I) difficulty = Difficulty.Impossible;
+
+                if (e.KeyCode == Keys.S) soundEnabled = !soundEnabled;
+
+
+// Commit step 132 of 150
