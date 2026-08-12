@@ -439,5 +439,17 @@ namespace PongGame
 
             if (paddleY < 0) paddleY = 0;
             if (paddleY > LogicalHeight - PaddleHeight) paddleY = LogicalHeight - PaddleHeight;
+        }
 
-// Commit step 129 of 150
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            if (state == GameState.Playing)
+            {
+                if (e.KeyCode == Keys.W) wPressed = true;
+                if (e.KeyCode == Keys.S) sPressed = true;
+                if (e.KeyCode == Keys.Up) upPressed = true;
+                if (e.KeyCode == Keys.Down) downPressed = true;
+
+                if (e.KeyCode == Keys.Escape)
+
+// Commit step 130 of 150
