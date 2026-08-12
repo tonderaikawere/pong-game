@@ -534,5 +534,17 @@ namespace PongGame
                 shakeDuration--;
             }
 
+            g.TranslateTransform(viewportX, viewportY);
+            g.ScaleTransform(viewportWidth / LogicalWidth, viewportHeight / LogicalHeight);
 
-// Commit step 137 of 150
+            using (SolidBrush bgBrush = new SolidBrush(Color.FromArgb(18, 18, 20)))
+            {
+                g.FillRectangle(bgBrush, 0, 0, LogicalWidth, LogicalHeight);
+            }
+
+            using (Pen borderPen = new Pen(Color.FromArgb(50, 50, 50), 4f))
+            {
+                g.DrawRectangle(borderPen, 2, 2, LogicalWidth - 4, LogicalHeight - 4);
+            }
+
+// Commit step 138 of 150
