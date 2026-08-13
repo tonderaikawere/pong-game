@@ -582,5 +582,17 @@ namespace PongGame
             g.Restore(baseState);
         }
 
+        private void DrawIntroScreen(Graphics g)
+        {
+            using (Font titleFont = new Font("Courier New", 42f, FontStyle.Bold))
+            using (SolidBrush blueBrush = new SolidBrush(Color.FromArgb(0, 102, 255)))
+            using (SolidBrush redBrush = new SolidBrush(Color.FromArgb(255, 51, 51)))
+            {
+                g.DrawString("PONG", titleFont, blueBrush, 180f, 60f);
+                g.DrawString("CHAMPIONSHIP", titleFont, redBrush, 330f, 60f);
+            }
 
-// Commit step 141 of 150
+            using (Font subFont = new Font("Consolas", 12f, FontStyle.Regular))
+            using (SolidBrush textBrush = new SolidBrush(Color.FromArgb(200, 200, 200)))
+
+// Commit step 142 of 150
