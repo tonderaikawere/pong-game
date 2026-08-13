@@ -594,5 +594,17 @@ namespace PongGame
 
             using (Font subFont = new Font("Consolas", 12f, FontStyle.Regular))
             using (SolidBrush textBrush = new SolidBrush(Color.FromArgb(200, 200, 200)))
+            {
+                g.DrawString("SELECT PLAY MODE:", subFont, textBrush, 150f, 170f);
+                DrawOption(g, "[1] PLAYER VS AI", playMode == PlayMode.PlayerVsAI, 170f, 200f);
+                DrawOption(g, "[2] PLAYER VS PLAYER (LOCAL)", playMode == PlayMode.PlayerVsPlayer, 170f, 225f);
+                DrawOption(g, "[3] AI VS AI (WATCH MODE)", playMode == PlayMode.AIVsAI, 170f, 250f);
 
-// Commit step 142 of 150
+                g.DrawString("AI DIFFICULTY:", subFont, textBrush, 150f, 300f);
+                DrawOption(g, "[E] EASY", difficulty == Difficulty.Easy, 170f, 330f);
+                DrawOption(g, "[M] MEDIUM", difficulty == Difficulty.Medium, 270f, 330f);
+                DrawOption(g, "[H] HARD", difficulty == Difficulty.Hard, 390f, 330f);
+                DrawOption(g, "[I] IMPOSSIBLE", difficulty == Difficulty.Impossible, 490f, 330f);
+
+
+// Commit step 143 of 150
