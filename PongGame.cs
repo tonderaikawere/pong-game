@@ -654,5 +654,17 @@ namespace PongGame
         }
 
         private void DrawPauseOverlay(Graphics g)
+        {
+            using (SolidBrush dimBrush = new SolidBrush(Color.FromArgb(150, 0, 0, 0)))
+            {
+                g.FillRectangle(dimBrush, 0, 0, LogicalWidth, LogicalHeight);
+            }
 
-// Commit step 147 of 150
+            using (Font titleFont = new Font("Courier New", 36f, FontStyle.Bold))
+            using (Font subFont = new Font("Consolas", 14f, FontStyle.Regular))
+            using (SolidBrush whiteBrush = new SolidBrush(Color.White))
+            {
+                g.DrawString("GAME PAUSED", titleFont, whiteBrush, 250f, 220f);
+                g.DrawString("Press ESC to Resume Play", subFont, whiteBrush, 280f, 300f);
+
+// Commit step 148 of 150
