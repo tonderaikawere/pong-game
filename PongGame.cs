@@ -678,5 +678,15 @@ namespace PongGame
             using (Font subFont = new Font("Consolas", 14f, FontStyle.Regular))
             using (SolidBrush winBrush = new SolidBrush(winColor))
             using (SolidBrush whiteBrush = new SolidBrush(Color.White))
+            {
+                g.DrawString("GAME OVER", titleFont, whiteBrush, 280f, 150f);
+                g.DrawString(winnerText, titleFont, winBrush, 180f, 230f);
 
-// Commit step 149 of 150
+                g.DrawString("Final Score: " + player1Score + " - " + player2Score, subFont, whiteBrush, 300f, 320f);
+                g.DrawString("HIGH SCORE: " + highScore, subFont, whiteBrush, 320f, 360f);
+
+                g.DrawString("PRESS [SPACE] FOR MENU", subFont, whiteBrush, 290f, 450f);
+            }
+        }
+    }
+}
