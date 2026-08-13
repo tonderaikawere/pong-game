@@ -630,5 +630,17 @@ namespace PongGame
             }
         }
 
+        private void DrawPlayScreen(Graphics g)
+        {
+            using (Font scoreFont = new Font("Courier New", 48f, FontStyle.Bold))
+            using (SolidBrush blueBrush = new SolidBrush(Color.FromArgb(0, 102, 255)))
+            using (SolidBrush redBrush = new SolidBrush(Color.FromArgb(255, 51, 51)))
+            {
+                g.DrawString(player1Score.ToString(), scoreFont, blueBrush, LogicalWidth / 2f - 120f, 30f);
+                g.DrawString(player2Score.ToString(), scoreFont, redBrush, LogicalWidth / 2f + 50f, 30f);
+            }
 
-// Commit step 145 of 150
+            using (SolidBrush blueBrush = new SolidBrush(Color.FromArgb(0, 102, 255)))
+            using (SolidBrush redBrush = new SolidBrush(Color.FromArgb(255, 51, 51)))
+
+// Commit step 146 of 150
