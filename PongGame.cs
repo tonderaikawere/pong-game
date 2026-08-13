@@ -618,5 +618,17 @@ namespace PongGame
                 g.DrawString("P1: W/S Keys  |  P2: Up/Down Arrow Keys  |  ESC: Pause Game", subFont, textBrush, 160f, 540f);
                 g.DrawString("HIGH SCORE: " + highScore, subFont, textBrush, 320f, 120f);
             }
+        }
 
-// Commit step 144 of 150
+        private void DrawOption(Graphics g, string text, bool selected, float x, float y)
+        {
+            Color col = selected ? Color.FromArgb(0, 255, 100) : Color.FromArgb(120, 120, 120);
+            using (Font f = new Font("Consolas", 11f, selected ? FontStyle.Bold : FontStyle.Regular))
+            using (SolidBrush b = new SolidBrush(col))
+            {
+                g.DrawString(text, f, b, x, y);
+            }
+        }
+
+
+// Commit step 145 of 150
