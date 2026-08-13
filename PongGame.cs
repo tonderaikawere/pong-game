@@ -606,5 +606,17 @@ namespace PongGame
                 DrawOption(g, "[H] HARD", difficulty == Difficulty.Hard, 390f, 330f);
                 DrawOption(g, "[I] IMPOSSIBLE", difficulty == Difficulty.Impossible, 490f, 330f);
 
+                g.DrawString("SOUND SYSTEM:", subFont, textBrush, 150f, 380f);
+                DrawOption(g, soundEnabled ? "[S] SOUND: ON" : "[S] SOUND: OFF", soundEnabled, 170f, 410f);
 
-// Commit step 143 of 150
+                using (Font blinkFont = new Font("Consolas", 16f, FontStyle.Bold))
+                using (SolidBrush startBrush = new SolidBrush(Color.White))
+                {
+                    g.DrawString("PRESS [SPACE] TO START GAME", blinkFont, startBrush, 240f, 480f);
+                }
+
+                g.DrawString("P1: W/S Keys  |  P2: Up/Down Arrow Keys  |  ESC: Pause Game", subFont, textBrush, 160f, 540f);
+                g.DrawString("HIGH SCORE: " + highScore, subFont, textBrush, 320f, 120f);
+            }
+
+// Commit step 144 of 150
