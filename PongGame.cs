@@ -642,5 +642,17 @@ namespace PongGame
 
             using (SolidBrush blueBrush = new SolidBrush(Color.FromArgb(0, 102, 255)))
             using (SolidBrush redBrush = new SolidBrush(Color.FromArgb(255, 51, 51)))
+            {
+                g.FillRectangle(blueBrush, 40f, paddle1Y, PaddleWidth, PaddleHeight);
+                g.FillRectangle(redBrush, LogicalWidth - 40f - PaddleWidth, paddle2Y, PaddleWidth, PaddleHeight);
+            }
 
-// Commit step 146 of 150
+            using (SolidBrush ballBrush = new SolidBrush(Color.White))
+            {
+                g.FillRectangle(ballBrush, ballX, ballY, BallSize, BallSize);
+            }
+        }
+
+        private void DrawPauseOverlay(Graphics g)
+
+// Commit step 147 of 150
