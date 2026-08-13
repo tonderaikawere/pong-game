@@ -547,4 +547,16 @@ namespace PongGame
                 g.DrawRectangle(borderPen, 2, 2, LogicalWidth - 4, LogicalHeight - 4);
             }
 
-// Commit step 138 of 150
+            using (Pen netPen = new Pen(Color.FromArgb(60, 60, 65), 3f))
+            {
+                netPen.DashPattern = new float[] { 10f, 10f };
+                g.DrawLine(netPen, LogicalWidth / 2f, 0, LogicalWidth / 2f, LogicalHeight);
+            }
+
+            for (int i = 0; i < particles.Count; i++)
+            {
+                Particle p = particles[i];
+                using (SolidBrush pBrush = new SolidBrush(Color.FromArgb(p.Life, p.Color)))
+                {
+
+// Commit step 139 of 150
