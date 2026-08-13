@@ -666,5 +666,17 @@ namespace PongGame
             {
                 g.DrawString("GAME PAUSED", titleFont, whiteBrush, 250f, 220f);
                 g.DrawString("Press ESC to Resume Play", subFont, whiteBrush, 280f, 300f);
+            }
+        }
 
-// Commit step 148 of 150
+        private void DrawGameOverScreen(Graphics g)
+        {
+            string winnerText = player1Score >= WinningScore ? "BLUE PLAYER WINS!" : "RED PLAYER WINS!";
+            Color winColor = player1Score >= WinningScore ? Color.FromArgb(0, 102, 255) : Color.FromArgb(255, 51, 51);
+
+            using (Font titleFont = new Font("Courier New", 36f, FontStyle.Bold))
+            using (Font subFont = new Font("Consolas", 14f, FontStyle.Regular))
+            using (SolidBrush winBrush = new SolidBrush(winColor))
+            using (SolidBrush whiteBrush = new SolidBrush(Color.White))
+
+// Commit step 149 of 150
