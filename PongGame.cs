@@ -558,5 +558,17 @@ namespace PongGame
                 Particle p = particles[i];
                 using (SolidBrush pBrush = new SolidBrush(Color.FromArgb(p.Life, p.Color)))
                 {
+                    g.FillRectangle(pBrush, p.X, p.Y, p.Size, p.Size);
+                }
+            }
 
-// Commit step 139 of 150
+            switch (state)
+            {
+                case GameState.Intro:
+                    DrawIntroScreen(g);
+                    break;
+                case GameState.Playing:
+                    DrawPlayScreen(g);
+                    break;
+
+// Commit step 140 of 150
