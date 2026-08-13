@@ -570,5 +570,17 @@ namespace PongGame
                 case GameState.Playing:
                     DrawPlayScreen(g);
                     break;
+                case GameState.Paused:
+                    DrawPlayScreen(g);
+                    DrawPauseOverlay(g);
+                    break;
+                case GameState.GameOver:
+                    DrawGameOverScreen(g);
+                    break;
+            }
 
-// Commit step 140 of 150
+            g.Restore(baseState);
+        }
+
+
+// Commit step 141 of 150
